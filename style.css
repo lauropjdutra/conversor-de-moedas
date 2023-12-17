@@ -11,7 +11,7 @@
 body {
   background: linear-gradient(to bottom, #012f3d75 0%, #0000008a 100%),
     url("./assets/background.jpg");
-  background-position: center;
+  background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -33,11 +33,12 @@ main {
 
 .main-container {
   display: flex;
+  padding-top: 0.5rem;
   width: 350px;
-  height: auto;
+  height: 450px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
   background: linear-gradient(180deg, #27353fd3 0%, #12181fd3 100%);
   border-radius: 0.5rem;
   border: 1px solid #aabbbb59;
@@ -46,13 +47,11 @@ main {
 }
 
 .input-container {
-  /* height: 100%; */
   width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 5px;
 }
 
 label {
@@ -60,17 +59,14 @@ label {
   font-size: 1rem;
   font-weight: 400;
   text-shadow: 0px 0px 2px #000000;
-  margin: 0.5rem 0 0.19rem;
+  margin-bottom: 0.19rem;
   width: 98%;
-}
-
-.label-input {
-  margin-bottom: 0.15rem;
 }
 
 select,
 input {
   width: 98%;
+  margin-bottom: 0.5rem;
   padding: 0.41rem 0.6rem 0.4rem 1.5rem;
   background: #132231
     url("./assets/dinheiro.png");
@@ -116,7 +112,7 @@ input::placeholder {
 }
 
 .convert-button {
-  margin: 1rem 0 1rem 0;
+  margin-top: 1rem;
   padding: 0.6rem;
   background: #dddddd;
   color: #132231;
@@ -137,7 +133,6 @@ input::placeholder {
 }
 
 .main-box {
-  padding: 7px 0 15px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -186,6 +181,7 @@ h3 {
   width: 100%;
   text-align: center;
   align-items: center;
+  padding-bottom: 0.5rem;
 }
 
 footer {

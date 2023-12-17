@@ -4,17 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" defer></script>
     <link rel="shortcut icon" href="./assets/moeda.png" type="image/x-icon" />
     <title>Conversor de Moedas</title>
   </head>
   <body>
     <main>
-      <img class="logo" src="./assets/logo.png" alt="Mão segurando moeda" title="Conversor de Moedas">
+      <img
+        class="logo"
+        src="./assets/logo.png"
+        alt="Mão segurando moeda"
+        title="Conversor de Moedas"
+      />
       <section class="main-container">
         <div class="input-container">
           <label for="from" title="Converter de">Converter de</label>
-          <select class="convert-from-select" name="from" id="from" title="Escolha uma moeda">
+          <select
+            class="convert-from-select"
+            name="from"
+            id="from"
+            title="Escolha uma moeda"
+          >
             <optgroup label="Moedas">
               <option value="dollar" selected>US$ Dólar americano</option>
               <option value="euro">€ Euro</option>
@@ -26,14 +35,19 @@
             </optgroup>
             <optgroup label="Criptomoedas">
               <option value="bitcoin">₿ Bitcoin</option>
+              <option value="dogecoin">Ð Dogecoin</option>
               <option value="ethereum">ETH Ethereum</option>
               <option value="litecoin">Ł Litecoin</option>
               <option value="xrp">XRP Ripple</option>
-              <option value="dogecoin">Ð Dogecoin</option>
             </optgroup>
           </select>
           <label for="to">Para</label>
-          <select class="convert-to-select" name="to" id="to" title="Escolha outra moeda">
+          <select
+            class="convert-to-select"
+            name="to"
+            id="to"
+            title="Escolha outra moeda"
+          >
             <optgroup label="Moedas">
               <option value="dollar">US$ Dólar americano</option>
               <option value="euro">€ Euro</option>
@@ -45,10 +59,10 @@
             </optgroup>
             <optgroup label="Criptomoedas">
               <option value="bitcoin">₿ Bitcoin</option>
+              <option value="dogecoin">Ð Dogecoin</option>
               <option value="ethereum">ETH Ethereum</option>
               <option value="litecoin">Ł Litecoin</option>
               <option value="xrp">XRP Ripple</option>
-              <option value="dogecoin">Ð Dogecoin</option>
             </optgroup>
           </select>
           <label class="label-input" for="amount">Valor</label>
@@ -58,24 +72,36 @@
             name="amount"
             placeholder="0.00"
             type="number"
-            title="Digite o valor para converter">
-          <input class="convert-button" type="submit" value="Converter" title="Converter">
+            title="Digite o valor para converter"
+          />
+          <input
+            class="convert-button"
+            type="submit"
+            value="Converter"
+            title="Converter"
+          />
         </div>
         <div class="main-box">
           <div class="from-box">
             <img
               class="flag-img icon-from"
               src="./assets/dollar.png"
-              alt="Moeda a ser convertida">
+              alt="Moeda a ser convertida"
+            />
             <h3 class="currency-from">Dólar americano</h3>
             <h2 class="value-from">$0.00</h2>
           </div>
-          <img class="arrow-img" src="./assets/Seta.png" title="Alternar moedas">
+          <img
+            class="arrow-img"
+            src="./assets/Seta.png"
+            title="Alternar moedas"
+          />
           <div class="to-box">
             <img
               class="flag-img icon-to"
               src="./assets/real.png"
-              alt="Moeda convertida">
+              alt="Moeda convertida"
+            />
             <h3 class="currency-to">Real brasileiro</h3>
             <h2 class="value-to">R$ 0,00</h2>
           </div>
@@ -84,9 +110,15 @@
       <footer>
         <h4>
           Copyright &copy; 2023 - Desenvolvido por
-          <a href="https://www.linkedin.com/in/lauropjdutra/" target="_blank" title="Lauro Dutra | LinkedIn">Lauro Dutra</a>
+          <a
+            href="https://www.linkedin.com/in/lauropjdutra/"
+            target="_blank"
+            title="Lauro Dutra | LinkedIn"
+            >Lauro Dutra</a
+          >
         </h4>
       </footer>
     </main>
   </body>
+  <script src="./script.js"></script>
 </html>

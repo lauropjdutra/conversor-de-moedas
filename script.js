@@ -174,64 +174,64 @@ async function convert() {
   const nameBRL = "Real brasileiro";
   const nameEUR = "Euro";
   const nameGBP = "Libra esterlina";
-  const nameCHF = "Franco suiço"
-  const nameJPY = "Iene japonês"
-  const nameARS = "Peso argentino"
-  const nameBTC = "Bitcoin"
-  const nameETH = "Ethereum"
-  const nameLTC = "Litecoin"
-  const nameXRP = "Ripple"
-  const nameXDG = "Dogecoin"
+  const nameCHF = "Franco suiço";
+  const nameJPY = "Iene japonês";
+  const nameARS = "Peso argentino";
+  const nameBTC = "Bitcoin";
+  const nameETH = "Ethereum";
+  const nameLTC = "Litecoin";
+  const nameXRP = "Ripple";
+  const nameXDG = "Dogecoin";
 
   // Alteração da 1ª moeda
   icon1.src = `./assets/${currency1.value}.png`;
   switch (currency1.value) {
     case "dollar":
-      name1.innerHTML = nameUSD
+      name1.innerHTML = nameUSD;
       value1.innerHTML = formatUSD.format(amount.value);
       break;
     case "real":
-      name1.innerHTML = nameBRL
+      name1.innerHTML = nameBRL;
       value1.innerHTML = formatBRL.format(amount.value);
       break;
     case "euro":
-      name1.innerHTML = nameEUR
+      name1.innerHTML = nameEUR;
       value1.innerHTML = formatEUR.format(amount.value);
       break;
     case "pound":
-      name1.innerHTML = nameGBP
+      name1.innerHTML = nameGBP;
       value1.innerHTML = formatGBP.format(amount.value);
       break;
     case "franc":
-      name1.innerHTML = nameCHF
+      name1.innerHTML = nameCHF;
       value1.innerHTML = formatCHF.format(amount.value);
       break;
     case "yen":
-      name1.innerHTML = nameJPY
+      name1.innerHTML = nameJPY;
       value1.innerHTML = formatJPY.format(amount.value);
       break;
     case "peso":
-      name1.innerHTML = nameARS
+      name1.innerHTML = nameARS;
       value1.innerHTML = formatARS.format(amount.value);
       break;
     case "bitcoin":
-      name1.innerHTML = nameBTC
+      name1.innerHTML = nameBTC;
       value1.innerHTML = formatBTC.format(amount.value);
       break;
     case "ethereum":
-      name1.innerHTML = nameETH
+      name1.innerHTML = nameETH;
       value1.innerHTML = formatETH.format(amount.value);
       break;
     case "litecoin":
-      name1.innerHTML = nameLTC
+      name1.innerHTML = nameLTC;
       value1.innerHTML = formatLTC.format(amount.value);
       break;
     case "xrp":
-      name1.innerHTML = nameXRP
+      name1.innerHTML = nameXRP;
       value1.innerHTML = formatXRP.format(amount.value);
       break;
     case "dogecoin":
-      name1.innerHTML = nameXDG
+      name1.innerHTML = nameXDG;
       value1.innerHTML = formatXDG.format(amount.value);
       break;
   }
@@ -240,50 +240,51 @@ async function convert() {
   icon2.src = `./assets/${currency2.value}.png`;
   switch (currency2.value) {
     case "dollar":
-      name2.innerHTML = nameUSD
+      name2.innerHTML = nameUSD;
       value2.innerHTML = formatUSD.format(result);
       break;
     case "real":
-      name2.innerHTML = nameBRL
+      name2.innerHTML = nameBRL;
       value2.innerHTML = formatBRL.format(result);
       break;
     case "euro":
-      name2.innerHTML = nameEUR
+      name2.innerHTML = nameEUR;
       value2.innerHTML = formatEUR.format(result);
       break;
     case "pound":
-      name2.innerHTML = nameGBP
+      name2.innerHTML = nameGBP;
       value2.innerHTML = formatGBP.format(result);
       break;
     case "franc":
-      name2.innerHTML = nameCHF
+      name2.innerHTML = nameCHF;
       value2.innerHTML = formatCHF.format(result);
       break;
     case "yen":
-      name2.innerHTML = nameJPY
+      name2.innerHTML = nameJPY;
       value2.innerHTML = formatJPY.format(result);
+      break;
     case "peso":
-      name2.innerHTML = nameARS
+      name2.innerHTML = nameARS;
       value2.innerHTML = formatARS.format(result);
       break;
     case "bitcoin":
-      name2.innerHTML = nameBTC
+      name2.innerHTML = nameBTC;
       value2.innerHTML = formatBTC.format(result);
       break;
     case "ethereum":
-      name2.innerHTML = nameETH
+      name2.innerHTML = nameETH;
       value2.innerHTML = formatETH.format(result);
       break;
     case "litecoin":
-      name2.innerHTML = nameLTC
+      name2.innerHTML = nameLTC;
       value2.innerHTML = formatLTC.format(result);
       break;
     case "xrp":
-      name2.innerHTML = nameXRP
+      name2.innerHTML = nameXRP;
       value2.innerHTML = formatXRP.format(result);
       break;
     case "dogecoin":
-      name2.innerHTML = nameXDG
+      name2.innerHTML = nameXDG;
       value2.innerHTML = formatXDG.format(result);
       break;
   }
