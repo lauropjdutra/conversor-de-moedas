@@ -3,4 +3,4 @@
 Projeto desenvolvido com HTML, CSS e JavaScript
 <br>
 
-<img src="./assets/mockup.png">
+<img src="./assets/mockup.jpg">
