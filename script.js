@@ -9,7 +9,8 @@ const icon1 = document.querySelector(".icon-from"); // Ícone da moeda a ser con
 const icon2 = document.querySelector(".icon-to"); // Ícone da moeda convertida
 const value1 = document.querySelector(".value-from"); // Valor a ser convertido
 const value2 = document.querySelector(".value-to"); // Valor convertido
-const arrow = document.querySelector(".arrow-img");
+const bid1 = document.querySelector(".current-bid"); // Cotação da 1ª moeda
+const bid2 = document.querySelector(".current-bid2"); // Cotação da 2ª moeda
 
 // INÍCIO DA FUNÇÃO CONVERT
 async function convert() {
@@ -189,50 +190,62 @@ async function convert() {
     case "dollar":
       name1.innerHTML = nameUSD;
       value1.innerHTML = formatUSD.format(amount.value);
+      bid1.innerHTML = `${coin2 / coin1} USD`;
       break;
     case "real":
       name1.innerHTML = nameBRL;
       value1.innerHTML = formatBRL.format(amount.value);
+      bid1.innerHTML = `${coin2 / coin1} BRL`;
       break;
     case "euro":
       name1.innerHTML = nameEUR;
       value1.innerHTML = formatEUR.format(amount.value);
+      bid1.innerHTML = `${coin2 / coin1} EUR`;
       break;
     case "pound":
       name1.innerHTML = nameGBP;
       value1.innerHTML = formatGBP.format(amount.value);
+      bid1.innerHTML = `${coin2 / coin1} GBP`;
       break;
     case "franc":
       name1.innerHTML = nameCHF;
       value1.innerHTML = formatCHF.format(amount.value);
+      bid1.innerHTML = `${coin2 / coin1} CHF`;
       break;
     case "yen":
       name1.innerHTML = nameJPY;
       value1.innerHTML = formatJPY.format(amount.value);
+      bid1.innerHTML = `${coin2 / coin1} JPY`;
       break;
     case "peso":
       name1.innerHTML = nameARS;
       value1.innerHTML = formatARS.format(amount.value);
+      bid1.innerHTML = `${coin2 / coin1} ARS`;
       break;
     case "bitcoin":
       name1.innerHTML = nameBTC;
       value1.innerHTML = formatBTC.format(amount.value);
+      bid1.innerHTML = `${coin2 / coin1} BTC`;
       break;
     case "ethereum":
       name1.innerHTML = nameETH;
       value1.innerHTML = formatETH.format(amount.value);
+      bid1.innerHTML = `${coin2 / coin1} ETH`;
       break;
     case "litecoin":
       name1.innerHTML = nameLTC;
       value1.innerHTML = formatLTC.format(amount.value);
+      bid1.innerHTML = `${coin2 / coin1} LTC`;
       break;
     case "xrp":
       name1.innerHTML = nameXRP;
       value1.innerHTML = formatXRP.format(amount.value);
+      bid1.innerHTML = `${coin2 / coin1} XRP`;
       break;
     case "dogecoin":
       name1.innerHTML = nameXDG;
       value1.innerHTML = formatXDG.format(amount.value);
+      bid1.innerHTML = `${coin2 / coin1} XDG`;
       break;
   }
 
@@ -242,53 +255,66 @@ async function convert() {
     case "dollar":
       name2.innerHTML = nameUSD;
       value2.innerHTML = formatUSD.format(result);
+      bid2.innerHTML = `= 1 USD`;
       break;
     case "real":
       name2.innerHTML = nameBRL;
       value2.innerHTML = formatBRL.format(result);
+      bid2.innerHTML = `= 1 BRL`;
       break;
     case "euro":
       name2.innerHTML = nameEUR;
       value2.innerHTML = formatEUR.format(result);
+      bid2.innerHTML = `= 1 EUR`;
       break;
     case "pound":
       name2.innerHTML = nameGBP;
       value2.innerHTML = formatGBP.format(result);
+      bid2.innerHTML = `= 1 GBP`;
       break;
     case "franc":
       name2.innerHTML = nameCHF;
       value2.innerHTML = formatCHF.format(result);
+      bid2.innerHTML = `= 1 CHF`;
       break;
     case "yen":
       name2.innerHTML = nameJPY;
       value2.innerHTML = formatJPY.format(result);
+      bid2.innerHTML = `= 1 JPY`;
       break;
     case "peso":
       name2.innerHTML = nameARS;
       value2.innerHTML = formatARS.format(result);
+      bid2.innerHTML = `= 1 ARS`;
       break;
     case "bitcoin":
       name2.innerHTML = nameBTC;
       value2.innerHTML = formatBTC.format(result);
+      bid2.innerHTML = `= 1 BTC`;
       break;
     case "ethereum":
       name2.innerHTML = nameETH;
       value2.innerHTML = formatETH.format(result);
+      bid2.innerHTML = `= 1 ETH`;
       break;
     case "litecoin":
       name2.innerHTML = nameLTC;
       value2.innerHTML = formatLTC.format(result);
+      bid2.innerHTML = `= 1 LTC`;
       break;
     case "xrp":
       name2.innerHTML = nameXRP;
       value2.innerHTML = formatXRP.format(result);
+      bid2.innerHTML = `1 XRP`;
       break;
     case "dogecoin":
       name2.innerHTML = nameXDG;
       value2.innerHTML = formatXDG.format(result);
+      bid2.innerHTML = `1 XDG`;
       break;
   }
 }
+convert();
 // FIM DA FUNÇÃO CONVERT
 
 function invert() {
@@ -298,7 +324,6 @@ function invert() {
   convert();
 }
 
-arrow.addEventListener("click", invert);
 currency1.addEventListener("change", convert);
 currency2.addEventListener("change", convert);
 button.addEventListener("click", convert);

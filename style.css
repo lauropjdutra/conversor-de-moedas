@@ -9,7 +9,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #012f3d75 0%, #0000008a 100%),
+  background: linear-gradient(to bottom, #012f3dc2 0%, #00000096 100%),
     url("./assets/background.jpg");
   background-position: right;
   background-size: cover;
@@ -33,9 +33,9 @@ main {
 
 .main-container {
   display: flex;
-  padding-top: 0.5rem;
+  padding: 1rem 0 0.7rem;
   width: 350px;
-  height: 450px;
+  height: 470px;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -133,10 +133,11 @@ input::placeholder {
 }
 
 .main-box {
+  padding: 8px;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 .flag-img {
@@ -146,42 +147,68 @@ input::placeholder {
   box-shadow: 1px 4px 5px #00000083;
 }
 
+.switch-box {
+  margin: 2rem 0;
+  height: 3.5rem;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.switch-box:hover {
+  opacity: 1;
+}
+
+.switch-box:active  {
+  opacity: 0.7;
+}
+
 .arrow-img {
   width: 1.9rem;
   cursor: pointer;
   transform: 0.1s;
-  opacity: 0.8;
 }
 
-.arrow-img:hover {
-  opacity: 1;
-}
-
-.arrow-img:active  {
-  opacity: 0.7;
+.invert-txt {
+  display: block;
+  color: #fefefe;
+  margin-top: -0.2rem;
+  font-size: 0.65rem;
 }
 
 h2 {
   color: #fefefe;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   text-shadow: 0px 0px 7px #0000008f;
 }
 
 h3 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
-  color: #dedede;
+  color: #eeeeee;
   text-shadow: 1px 1px 5px #000000;
 }
 
 .from-box,
 .to-box {
+  padding: 15px 0 8px;
   display: flex;
   flex-direction: column;
   width: 100%;
   text-align: center;
   align-items: center;
-  padding-bottom: 0.5rem;
+}
+
+.bid-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #999999;
+}
+
+.current-bid, .current-bid2 {
+  font-size: 0.9rem;
 }
 
 footer {
@@ -208,4 +235,10 @@ a:hover {
 
 a:active {
   opacity: 0.7;
+}
+
+@media screen and (min-width: 1470px) {
+  main {
+    height: 100%;
+  }  
 }

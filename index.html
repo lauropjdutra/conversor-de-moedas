@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="./assets/moeda.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
     <title>Conversor de Moedas</title>
   </head>
   <body>
@@ -27,7 +27,7 @@
             <optgroup label="Moedas">
               <option value="dollar" selected>US$ Dólar americano</option>
               <option value="euro">€ Euro</option>
-              <option value="franc">Fr Franco Suiço</option>
+              <option value="franc">Fr Franco suiço</option>
               <option value="yen">¥ Iene japonês</option>
               <option value="pound">£ Libra esterlina</option>
               <option value="peso">$ Peso argentino</option>
@@ -51,7 +51,7 @@
             <optgroup label="Moedas">
               <option value="dollar">US$ Dólar americano</option>
               <option value="euro">€ Euro</option>
-              <option value="franc">Fr Franco Suiço</option>
+              <option value="franc">Fr Franco suiço</option>
               <option value="yen">¥ Iene japonês</option>
               <option value="pound">£ Libra esterlina</option>
               <option value="peso">$ Peso argentino</option>
@@ -91,11 +91,9 @@
             <h3 class="currency-from">Dólar americano</h3>
             <h2 class="value-from">$0.00</h2>
           </div>
-          <img
-            class="arrow-img"
-            src="./assets/Seta.png"
-            title="Alternar moedas"
-          />
+          <div onclick="invert()" class="switch-box" title="Inverter moedas">
+            <img class="arrow-img" src="./assets/Seta.png"/>
+          </div>
           <div class="to-box">
             <img
               class="flag-img icon-to"
@@ -105,6 +103,10 @@
             <h3 class="currency-to">Real brasileiro</h3>
             <h2 class="value-to">R$ 0,00</h2>
           </div>
+        </div>
+        <div class="bid-box" title="Cotação atual">
+          <i class="fa-solid fa-circle-info fa-2xs"></i
+          ><span class="current-bid"></span><span class="current-bid2"></span>
         </div>
       </section>
       <footer>
@@ -120,5 +122,9 @@
       </footer>
     </main>
   </body>
+  <script
+    src="https://kit.fontawesome.com/e12cc718e7.js"
+    crossorigin="anonymous"
+  ></script>
   <script src="./script.js"></script>
 </html>
