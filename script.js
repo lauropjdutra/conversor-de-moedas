@@ -305,17 +305,18 @@ async function convert() {
     case "xrp":
       name2.innerHTML = nameXRP;
       value2.innerHTML = formatXRP.format(result);
-      bid2.innerHTML = `1 XRP`;
+      bid2.innerHTML = `= 1 XRP`;
       break;
     case "dogecoin":
       name2.innerHTML = nameXDG;
       value2.innerHTML = formatXDG.format(result);
-      bid2.innerHTML = `1 XDG`;
+      bid2.innerHTML = `= 1 XDG`;
       break;
   }
 }
-convert();
 // FIM DA FUNÇÃO CONVERT
+
+convert();
 
 function invert() {
   let aux = currency1.value;
