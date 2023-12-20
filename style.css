@@ -9,8 +9,6 @@
 }
 
 body {
-  /* background: linear-gradient(to bottom, #000303ce 0%, #000000a4 100%),
-    url("./assets/background.jpg"); */
   background: linear-gradient(to bottom, #0924249f 0%, #000d0ff8 100%),
     url("./assets/background.jpg");
   background-position: right;
