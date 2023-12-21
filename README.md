@@ -1,3 +1,4 @@
+<img src="./assets/mockup.jpg">
 <div align=center>
 <h1>CONVERSOR DE MOEDAS</h1>
 </div>
@@ -17,6 +18,3 @@ Agradeço ao meu parceiro de estudos, <a href="https://github.com/willianpocinho
 ## 🖥 Tecnologias
 
 Este projeto foi desenvolvido com HTML, CSS, JavaScript e consumo de API.
-<br>
-
-<img src="./assets/mockup.jpg">
