@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-# Conversor de Moedas
-
-Projeto desenvolvido com HTML, CSS, JavaScript e consumo de API.
-<br>
-
-=======
->>>>>>> 2deba426e7b8c977edcc22596802a2052335ff07
 <img src="./assets/mockup.jpg">
 <div align=center>
 <h1>CONVERSOR DE MOEDAS</h1>
@@ -21,7 +13,7 @@ Para realizar a conversão, selecione uma moeda no primeiro campo e escolha a mo
 
 ## 🤝🏻 Agradecimentos
 
-Agradeço ao meu parceiro de estudos, <a href="https://github.com/willianpocinhos" target="_blank">Willian P. Santos</a>, pela contribuição de soluções inovadoras aplicadas no código. Através dos seus conhecimentos, adquiri o aprendizado necessário para implementar as funcionalidades desejadas.
+Agradeço ao meu parceiro de estudos, <a href="https://github.com/willianpocinhos" target="_blank">Willian P. Santos</a>, pela contribuição de soluções inovadoras aplicadas no código.
 
 ## 🖥 Tecnologias
 
